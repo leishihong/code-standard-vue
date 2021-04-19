@@ -12,7 +12,7 @@ import HelloWorld from '@/components/HelloWorld.vue';
 export default {
 	name: 'Home',
 	components: {
-		HelloWorld,
+		HelloWorld
 	},
 	mounted() {
 		this.init();
@@ -20,7 +20,7 @@ export default {
 	methods: {
 		init() {
 			console.log(33);
-		},
-	},
+		}
+	}
 };
 </script>
