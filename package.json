@@ -50,8 +50,8 @@
 		"vue-template-compiler": "^2.6.11"
 	},
 	"gitHooks": {
-		"pre-add": "pretty-quick --staged",
-		"pre-commit": "pretty-quick --staged",
+		"pre-add": "pretty-quick lint-staged",
+		"pre-commit": "pretty-quick lint-staged",
 		"commit-msg": "commitlint -E GIT_PARAMS"
 	},
 	"lint-staged": {
