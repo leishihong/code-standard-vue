@@ -51,11 +51,13 @@
 	},
 	"gitHooks": {
 		"pre-add": "pretty-quick --staged",
-		"pre-commit": "pretty-quick --staged"
+		"pre-commit": "pretty-quick --staged",
+		"commit-msg": "commitlint -E GIT_PARAMS"
 	},
 	"lint-staged": {
 		"src/*.{js,vue}": [
 			"vue-cli-service lint",
+			"style-lint",
 			"git add",
 			"git commit"
 		]
