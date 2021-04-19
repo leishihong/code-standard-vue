@@ -11,14 +11,14 @@ module.exports = {
 	//   color: pink!important;
 	// }
 	/* stylelint-enable */
-	extends: ['stylelint-config-standard'],
+	extends: ['stylelint-config-standard', 'stylelint-plugin-stylus/recommended'],
 	plugins: ['stylelint-order'], // stylelint-order是CSS属性排序插件
 	rules: {
 		'at-rule-no-unknown': [
 			true,
 			{
-				ignoreAtRules: ['mixin', 'extend', 'content'],
-			},
+				ignoreAtRules: ['mixin', 'extend', 'content']
+			}
 		], // 让 Stylelint 支持 SCSS 语法中的 mixin 、 extend 、 content 语法
 		// 'at-rule-no-unknown': true, // 不允许at-rules不明
 		// 'at-rule-name-newline-after': 'always',
@@ -47,8 +47,8 @@ module.exports = {
 		'no-duplicate-selectors': [
 			true,
 			{
-				disallowInList: false,
-			},
+				disallowInList: false
+			}
 		], // 不允许重复的选择器
 		'no-eol-whitespace': true, // 不允许行尾空白(stylelint-config-standard)
 		// "no-invalid-double-slash-comments": true // 不允许双斜杠注释(/ /…)不支持CSS(stylelint-config-standard)
@@ -56,8 +56,8 @@ module.exports = {
 			// 指定声明块内的内容顺序
 			['custom-properties', 'declarations'],
 			{
-				disableFix: true,
-			},
+				disableFix: true
+			}
 		],
 		'order/properties-order': [
 			// 指定声明块内属性的字母顺序
@@ -206,13 +206,13 @@ module.exports = {
 			'page',
 			'set-link-source',
 			'unicode-bidi',
-			'speak',
+			'speak'
 		],
 		'selector-pseudo-element-no-unknown': [
 			true,
 			{
-				ignorePseudoElements: ['v-deep'],
-			},
-		],
-	},
-};
+				ignorePseudoElements: ['v-deep']
+			}
+		]
+	}
+}

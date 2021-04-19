@@ -21,9 +21,9 @@ module.exports = {
 		eqeqeq: 0, // 剔除必须使用全等
 		//'default-case': 2,
 		'space-before-function-paren': [0, 'always'], // 函数定义时括号前面要不要有空格
-		'vue/attribute-hyphenation': 'never',
+		'vue/attribute-hyphenation': 'off',
 		'vue/max-attributes-per-line': [
-			'wran',
+			'warn',
 			{
 				singleline: 3,
 				multiline: {
@@ -32,6 +32,15 @@ module.exports = {
 				}
 			}
 		],
+		'class-methods-use-this': 0,
+		'import/no-named-as-default': 0,
+		'react/jsx-filename-extension': [
+			'error',
+			{
+				extensions: ['.js', '.jsx']
+			}
+		],
+
 		'prettier/prettier': [
 			'error',
 			{

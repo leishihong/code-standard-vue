@@ -4,7 +4,6 @@
 		<HelloWorld
 			msg="Welcome to Your Vue.js App"
 			class="ceshi dede dede de"
-			style="margin-top: 20px; text-align: center"
 		/>
 	</div>
 </template>
