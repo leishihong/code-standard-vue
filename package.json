@@ -54,7 +54,7 @@
 		}
 	},
 	"lint-staged": {
-		"src/*.{vue}": [
+		"src/*.{js,jsx,vue,ts,tsx}": [
 			"vue-cli-service lint",
 			"style-lint",
 			"git add",
