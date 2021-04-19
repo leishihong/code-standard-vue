@@ -10,15 +10,18 @@ module.exports = {
 	htmlWhitespaceSensitivity: 'ignore', //html空格严格程度，可选<css|strict|ignore>
 	proseWrap: 'preserve', // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
 	requireConfig: false, // Require a 'prettierconfig' to format prettier
+	jsxSingleQuote: false, // 在jsx中使用单引号代替双引号
+	trailingComma: 'none', // 末尾不需要逗号
+	rangeStart: 0, // 每个文件格式化的范围是文件的全部内容
+	rangeEnd: Infinity,
+	requirePragma: false, // 不需要写文件开头的 @prettier
+	insertPragma: false, // 不需要自动在文件开头插入 @prettier
+	printWidth: 120,
+	quoteProps: 'as-needed'
 
 	// trailingComma: 'es5' // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
 	// tslintIntegration": false // 不让prettier使用tslint的代码格式进行校验
 	// eslintIntegration": false, //不让prettier使用eslint的代码格式进行校验
-	// jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
-	// parser": "babylon", // 格式化的解析器，默认是babylon
 
-	insertPragma: false,
-	printWidth: 120,
-	quoteProps: 'as-needed',
-	requirePragma: false
+	// parser": "babylon", // 格式化的解析器，默认是babylon
 }
