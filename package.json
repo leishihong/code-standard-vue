@@ -57,7 +57,7 @@
 	},
 	"lint-staged": {
 		"src/**/*.{js,vue}": [
-			"vue-cli-service lint",
+			"pretty-quick",
 			"stylelint",
 			"git add"
 		]
