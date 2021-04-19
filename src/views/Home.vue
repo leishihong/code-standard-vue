@@ -5,7 +5,7 @@
 	</div>
 </template>
 
-<script>
+<script type="javascript">
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
 
@@ -15,7 +15,7 @@ export default {
 		HelloWorld
 	},
 	mounted() {
-		this.init();
+		this.init()
 	},
 	methods: {
 		init() {
